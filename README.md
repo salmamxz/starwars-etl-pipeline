@@ -16,6 +16,14 @@ The raw MongoDB collections contain nested structures, stringified numbers, and 
 - **Second Normal Form (2NF):** Entity attributes are separated so that non-key attributes depend on their entity's primary key. For example, `starships` stores starship specifications, while `people` stores character details.
 - **Third Normal Form (3NF):** Planet and homeworld attributes are stored separately in a `planets` lookup table. Characters reference planets through the `homeworld_id` foreign key, reducing duplication and update anomalies.
 
+
+## Entity Relationship Diagram (ERD)
+
+The diagram below illustrates the relational database schema, including the entities, primary keys, foreign keys, and relationships between Star Wars characters, planets, starships, films, and junction tables.
+
+![Star Wars ETL Entity Relationship Diagram](img/group.jpg)
+
+
 ### 2. Code Structure
 
 The codebase is organised into three Python files to maintain a separation of concerns.
